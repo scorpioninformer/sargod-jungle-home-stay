@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <title>Packages - Best resorts in Chikmagalur</title>
+    
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src="jquery.bxslider.js"></script>
+    <link href="jquery.bxslider.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://clubvelvet.in/javarain/jrr/css/custom.css">
+    <link href="https://fonts.googleapis.com/css?family=Italianno" rel="stylesheet">
+
+    <style>
+        .bxslider {
+            height: 100vh !important;
+            width: 100vw !important;
+            position: relative;
+            padding: 0px;
+            border: none;
+        }
+td a{
+color: #0000EE;
+text-decoration: underline;
+}
+
+        .bxslider img {
+            width: 100%
+        }
+
+        ul {
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+            line-height: 1.5em;
+            color: #777;
+        }
+
+        td {
+            color: #000;
+            text-align: center;
+        }
+
+        th {
+            text-align: center;
+        }
+
+        td,
+        a {
+            color: black;
+            /*text-transform: uppercase!important;*/
+        }
+    </style>
+
+</head>
+
+<body style="background:#ddd">
+    <div id="load" style="display: none;">
+        <div class="logo-image"></div>
+    </div>
+    <div id="header" style="background-color: rgba(255, 255, 255, 0.5);">
+        <div id="header-inner" style="margin-top: -25px;">
+            <div style="border-bottom:1px solid #dddddd; margin-top:-5px;">
+                <div class="row">
+                    <div class="col-md-6 text-left">
+                        <p style="font-size:10px;">Contact Us: +91 90086-66000 | +91 99026-66000 | Mail : <a href="mailto:reservations@javarainresorts.com">reservations@javarainresorts.com</a></p>
+                    </div>
+                    <div class="col-md-6 media-social">
+                        <a href="https://www.facebook.com/javarain" target="_blank"><img src="images/facebook-logo.png" alt="" style="display: inline-block !important; cursor:pointer;"></a>
+                        <a href="https://twitter.com/javarainresorts/" target="_blank"><img src="images/twitter-black-shape.png" alt="" style="display: inline-block !important; cursor:pointer;"></a>
+                        <a href="https://www.instagram.com/javarainresorts/" target="_blank"><img src="images/instagram-logo.png" alt="" style="display: inline-block !important; cursor:pointer;"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="header-inner-logo">
+                <div id="header-inner-logo-icon"><span class="iconb" data-icon="?"></span></div>
+                <div id="header-inner-logo-text">
+                    <a href="index"><img src="images/logo.png" alt=""></a>
+                </div>
+            </div>
+            <div id="header-inner-nav">
+                <a href="index.html">
+                   HOME
+                </a>
+                <a href="whyus.html">
+                   WHY US
+                </a>
+                <a href="room.html">
+                   VILLAS
+                </a>
+                <a href="Amm.html">
+                    AMENITIES
+                </a>
+                <a href="dining.html">
+                    DINING
+                </a>
+                <a class="dropdown-navbar">
+                    PACKAGES
+                    </a><ul class="dropdown-content-nav" style="display: none;"><a class="dropdown-navbar">
+                            </a><li><a class="dropdown-navbar"></a><a href="winter" class="dropdown">Winter &amp; Summer</a></li>
+                            <li><a href="romantic" class="dropdown">Romantic</a>
+                            </li>
+                    </ul>
+                
+                <a href="exp.html">
+                    EXPERIENCE
+                </a>
+                <a href="spa.html">
+                    SPA
+                </a>
+                <a href="gallery.html">
+                    GALLERY
+                </a>
+                <a href="media.html">
+                 MEDIA
+              </a>
+                <a href="contact.html">
+                    CONTACT
+                </a>
+            </div>
+        </div>
+    </div>
+<script>
+        $(document).ready(function() {
+            $(".dropdown-navbar").mouseenter(function() {
+                $('.dropdown-content-nav').show();
+            });
+            $("#header-inner").mouseleave(function() {
+                $('.dropdown-content-nav').hide();
+            });
+        });
+    </script>
+    <nav class="navbar hidden-lg hidden-md">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+                <a class="navbar-brand" href="index"><img src="images/logo.png" alt="" width="120px;" style="padding-top:10px;"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="whyus.html">WHY US</a></li>
+                    <li><a href="room.html">VILLAS</a></li>
+                    <li><a href="Amm.html">AMENITIES</a></li>
+                    <li><a href="dining.html">DINING</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">PACKAGES<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="winter" class="dropdown">Winter &amp; Summer</a></li>
+                            <li><a href="romantic" class="dropdown">Romantic</a>
+                        </li></ul>
+                        </li>
+
+                        <li><a href="exp.html">EXPERIENCE</a></li>
+                        <li><a href="spa.html">SPA</a></li>
+                        <li><a href="gallery.html">GALLERY</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="well" style="background-color:#fff; color:#2a2a2a">
+
+            <img src="img/winter%20summer%20pakage.jpg" alt="">
+            
+            
+                
+            
+            
+            <div><br><br>
+                <p class="text-center bold">(26th SEPTEMBER 2017 TO 19th DECEMBER 2017 &amp; 2nd JANUARY 2018 TO 10th JUNE
+2018) &amp; (26th SEPTEMBER 2018 TO 19th DECEMBER 2018 &amp; 2nd JANUARY 2019 TO 10th
+JUNE 2019)</p>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="text-center">Weekday (Monday, Tuesday, Wednesday, Thursday)</p>
+                    <div class="table-responsive">
+                        <table class="table table-hover table-stripped  well" style="">
+                            <thead>
+                                <tr>
+                                    <th>Room type</th>
+                                    <th>Tariff per night</th>
+                                    <th>2 nights package</th>
+                                    <th>3 nights package</th>
+                                    <th>Meal plan</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="room">Kaffa</a></td>
+                                    <td>Rs.16384</td>
+                                    <td>Rs.28836</td>
+                                    <td>Rs.41780</td>
+                                    <td>APAI</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="room">Qhava</a> </td>
+                                    <td>Rs.17920</td>
+                                    <td>Rs.31540</td>
+                                    <td>Rs.45696</td>
+                                    <td>APAI</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+                    <p class="text-center">Weekend (Friday, Saturday, Sunday)</p>
+                    <div class="table-responsive">
+                        <table class="table table-hover table-stripped well " style="">
+                            <thead>
+                                <tr>
+                                    <th>Room type</th>
+                                    <th>Tariff per night</th>
+                                    <th>2 nights package</th>
+                                    <th>3 nights package</th>
+                                    <th>Meal plan</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td> <a href="room">Kaffa</a> </td>
+                                    <td>Rs.16384</td>
+                                    <td>Rs.29491</td>
+                                    <td>Rs.43254</td>
+                                    <td>APAI</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="room">Qhava</a> </td>
+                                    <td>Rs.17920</td>
+                                    <td>Rs.32256</td>
+                                    <td>Rs.47309</td>
+                                    <td>APAI</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                
+                <div class="col-md-12">
+                    <br>
+                    <p class="text-center bold">MONSOON PACKAGE (11th JUNE to 25th SEPTEMBER 2018) </p>
+                    <div class="table-responsive">
+                        <table class="table table-hover table-stripped well " style="">
+                            <thead>
+                                <tr>
+                                    <th>Rack Type</th>
+                                    <th>Tariffs Per Night</th>
+                                    <th>2 Nights Package</th>
+                                    <th>3 Nights Package</th>
+                                    <th>Meal plan</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="room">Kaffa</a> </td>
+
+                                    <td>Rs.16384</td>
+                                    <td>Rs.26600</td>
+                                    <td>Rs.38200</td>
+                                    <td>APAI</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="room">Qhava</a> </td>
+
+                                    <td>Rs.17920</td>
+                                    <td>Rs.28890</td>
+                                    <td>Rs.41200</td>
+                                    <td>APAI</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+
+               <!-- <div class="col-md-12">
+                    <br>
+                    <p class="text-center bold">ROMANTIC GETAWAY PACKAGE </p>
+                    <p class="text-center">(Valid till June 2018) <small>For couples only</small></p>
+                    
+                    <div class="table-responsive">
+                        <table class="table table-hover table-stripped well " style="">
+                            <thead>
+                                <tr>
+                                    <th>Room type</th>
+                                    <th>2 nights package</th>
+                                    <th>3 nights package</th>
+                                    <th>Meal plan</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="room">Kaffa</a> </td>
+
+                                    <td>Rs.41460</td>
+                                    <td>Rs.56599</td>
+                                    <td>APAI</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="room">Qhava</a> </td>
+
+                                    <td>Rs.44502</td>
+                                    <td>Rs.61060</td>
+                                    <td>APAI</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>-->
+
+                <div class="col-md-12">
+                    <div class="alert alert-info">
+                        <p>NOTE: ABOVE PACKAGES ARE NOT VALID FROM 20TH DEC 2018 TO 2ND JAN 2019.</p>
+                    </div>
+                    <p style="font-size:14px;"><b>The above cost includes:</b></p>
+                    <ul style="font-siz,e:12px;">
+                     <li>Welcome drink on arrival with cold towel.</li>
+                        <li> Complimentary Mini Bar placed (Soft Drinks &amp; Chips) in the room on the day of arrival.</li>
+                        <li> Complimentary use of indoor/Outdoor games ( Board Games/ Badminton/ Volleyball/ Basketball etc)</li>
+                        <li> Complimentary use of swimming pool.</li>
+                        <li> Use of outdoor play area for children.</li>
+                        <li> *APAI* Includes all meals - lunch, dinner, breakfast, package starts with lunch on day of arrival &amp; ends with Breakfast on the date of departure meals as part of the package can be availed only at the restaurant.</li> 
+                    </ul>
+
+
+                   <p style="font-size:14px;"><b>Extra occupancy:</b></p>
+                    <ul style="font-size:12px;">
+                        <li>Children below 6yrs old – Complimentary</li>
+                        <li>Extra child between 6 -12 years with food &amp; extra mattress @ INR 3,200/- per night per child on APAI.</li>
+                        <li>Extra child between 6 -12 years with only food @ INR 1500/- per night per child</li>
+                        <li>Extra child above 12yrs / adult with food &amp; extra mattress @ INR 4,480/- per night per Adult on APAI.</li>
+                    </ul>
+
+                    <p style="font-size:14px;"><b> Permitted Occupancy:</b></p>
+                    <ul style="font-size:12px;">
+                        <li>Kaffa:- A maximum of two adults are allowed to occupy a Kaffa.</li>
+                        <li>Qhava:- A maximum of two adults are allowed to occupy a Qhava.</li>
+
+                       <!-- <li> Kaffa:- A maximum of two adults and 02 children below 12 Yrs are allowed to occupy a Kaffa.</li>
+                        <li> Qhava:- A maximum of two adults and 02 children below 12 Yrs are allowed to occupy a Qhava.</li>
+                        <li> ** Note: We can put 01 extra bed in each room if required.</li>-->
+                    </ul>
+
+
+                    <div class="alert alert-danger">
+                        Cancellation Policy: <br><br> Confirmed dates / days may be altered, cancelled or cut short only if intimation in writing reaches the company, 30 days prior to the check in date. <br> 50% refund will be issued if the cancellation is effected between 16 &amp; 28 days prior to the check in date. <br><br> No refund/ No postponement if the cancellation is effected 15 days prior to the check in date.
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 foot-left">
+                    Copyright © 2017 JavaRainResorts. Powered by <a href="http://www.ajnasoft.com/">Ajnasoft</a> <br>
+                </div>
+                <div class="col-md-6 foot-right"> <br>
+                    <a href="privacy">Privacy Policy</a> | <a href="reservation">Cancellation Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        $(document).ready(function() {
+            $('#one-block').slideUp('slow');
+            $('#two-block').slideUp('slow');
+            $('#three-block').slideUp('slow');
+            $('#one').click(function() {
+                $('#one-block').slideDown('slow');
+                $('#two-block').slideUp('slow');
+                $('#three-block').slideUp('slow');
+            });
+            $('#two').click(function() {
+                $('#one-block').slideUp('slow');
+                $('#two-block').slideDown('slow');
+                $('#three-block').slideUp('slow');
+            });
+            $('#three').click(function() {
+                $('#one-block').slideUp('slow');
+                $('#two-block').slideUp('slow');
+                $('#three-block').slideDown('slow');
+            });
+        });
+    </script>
+
+    <script>
+        window.onload = function() {
+            document.getElementById("load").style.display = "none"
+        }
+    </script>
+    <script>
+        $(window).load(function() {
+            $('.logo-image').fadeIn('slow');
+        });
+    </script>
+
+
+
+    <script src="js/header.js">
+    </script>
+    <script type="text/javascript">
+        jssor_1_slider_init();
+    </script>
+
+
+
+
+
+
+
+</body></html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
